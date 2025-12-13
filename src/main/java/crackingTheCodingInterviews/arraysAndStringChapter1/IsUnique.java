@@ -14,6 +14,10 @@ public class IsUnique {
         System.out.println(checkIsUniqueWithoutDataStructures("k2tF8yM5nJqD7eB"));
         System.out.println(checkIsUniqueWithoutDataStructures("ABCDEfGHij123KLMNopQ876sTUV90WXYZ"));
 
+        System.out.println(checkWithoutDataStructures2("This is a sentence"));
+        System.out.println(checkWithoutDataStructures2("k2tF8yM5nJqD7eB"));
+        System.out.println(checkWithoutDataStructures2("ABCDEfGHij123KLMNopQ876sTUV90WXYZ"));
+
     }
 
     //We can use following data structures [1] Set [2] Map [3]. List our custom implementation
@@ -31,6 +35,10 @@ public class IsUnique {
             }
         }
         return true;
+    }
+
+    public static boolean checkWithoutDataStructures2(String str) {
+        return str.chars().distinct().count() == str.length();
     }
 
     public static boolean checkIsUniqueWithDataStructures(String str) {
