@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 //1.1 Determine if string has all unique characters. Donot use data structures
 public class IsUnique {
@@ -18,6 +19,20 @@ public class IsUnique {
         System.out.println(checkWithoutDataStructures2("k2tF8yM5nJqD7eB"));
         System.out.println(checkWithoutDataStructures2("ABCDEfGHij123KLMNopQ876sTUV90WXYZ"));
 
+        System.out.println(checkIsUniqueWithJava8WithDataStructures("This is a sentence"));
+        System.out.println(checkIsUniqueWithJava8WithDataStructures("k2tF8yM5nJqD7eB"));
+        System.out.println(checkIsUniqueWithJava8WithDataStructures("ABCDEfGHij123KLMNopQ876sTUV90WXYZ"));
+
+    }
+
+    //We can use java8 Stream
+    public static boolean checkIsUniqueWithJava8WithDataStructures(String str) {
+        String[] arrOfStrings= str.split("");
+        Set<String> set = Arrays.stream(arrOfStrings).collect(Collectors.toSet());
+        if(set.size() == arrOfStrings.length){
+            return true;
+        }
+        return false;
     }
 
     //We can use following data structures [1] Set [2] Map [3]. List our custom implementation
