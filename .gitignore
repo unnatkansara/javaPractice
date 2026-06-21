@@ -1,0 +1,66 @@
+# ==========================================
+# Core Java Exclusions
+# ==========================================
+*.class
+*.log
+*.ctxt
+.mtj.tmp/
+hs_err_pid*
+replay_pid*
+
+# Package Files (Uncomment if you do not want to track packaged libraries)
+# *.jar
+# *.war
+# *.nar
+# *.ear
+# *.zip
+
+# ==========================================
+# Build Tools (Maven and Gradle)
+# ==========================================
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/.maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+.gradletasknamecache
+
+# ==========================================
+# IDEs and Editors
+# ==========================================
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse
+.metadata/
+bin/
+tmp/
+.localHistory/
+.project
+.classpath
+.settings/
+*.launch
+
+# Visual Studio Code
+.vscode/
+
+# ==========================================
+# Operating System Files
+# ==========================================
+.DS_Store
+Thumbs.db
