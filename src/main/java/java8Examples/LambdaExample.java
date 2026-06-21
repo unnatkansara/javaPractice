@@ -7,17 +7,17 @@ public class LambdaExample {
         noparam.process();
 
         //With parameters, no braces, no return
-        Operator<Integer> addition = (a, b) -> a + b;
-        System.out.println("ADDITION : " + addition.process(1,2));
+//        Operator<Integer> addition = (a, b) -> a + b;
+//        System.out.println("ADDITION : " + addition.process(1,2));
 
         Operator<String> concatenation = (a, b) -> a + b;
         System.out.println("CONCAT : " + concatenation.process("Unnat","Kansara"));
 
-        WithParamsMultiStatementWithReturnBraces<Integer> w = (a, b) -> {
-            int multiplier = 2;
-            return multiplier * (a + b);
-        };
-        System.out.println(w.process(1,2));
+//        WithParamsMultiStatementWithReturnBraces<Integer> w = (a, b) -> {
+//            int multiplier = 2;
+//            return (multiplier * (a + b));
+//        };
+//        System.out.println(w.process(1,2));
     }
 
     @FunctionalInterface
