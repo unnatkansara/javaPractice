@@ -5,6 +5,17 @@ import java.util.stream.Stream;
 public class StreamExample {
 
     public static void main(String[] args){
+        //Finite Streams Create
+        //Finite Streams Create - Empty Stream
+        Stream<String> s1 = Stream.empty();
+        s1.forEach(System.out::println); //Nothing will be printed
+
+        //Finite Streams Create - from values
+        Stream<Integer> s2 = Stream.of(1,2,3,4,5);
+        s2.forEach(System.out::println); //1 2 3 4 5 will be printed
+
+        
+
         //Stream to get distinct numbers
         System.out.println("Unique numbers");
         Stream.of(1,6,2,4,7,6,4,5,2).distinct().forEach(System.out::println);
